@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main() {
+	
+	int N1,N2,operacao,resultado;
+	
+	printf("digite o primeiro numero: ");
+	scanf("%d",&N1);	
+	printf("digite o segundo numero: ");
+	scanf("%d",&N1);
+	
+   printf("\ninforme a operacao desejada");
+   printf("\n - soma; 2 - subtracao; 3- multiplicacao; 4-divisao: ");
+   scanf("%d",&operacao);
+
+
+
+	if(operacao >= 1 && operacao <= 4){ 
+	   if(operacao == 1){
+	   resultado = N1 + N2; 
+	   printf("digite a soma desejada: ");
+	   scanf("%d", &resultado);
+			
+		}else if(operacao ==  2){
+	    resultado = N1 - N2;
+	    printf("o resultado da subtracao é: ");
+	    scanf("%d", &resultado);
+	    
+		}else if(operacao == 3){
+		resultado = N1 * N2;
+		printf("o resultado da multiplicacao é: ");
+	    scanf("%d", &resultado);
+	    
+		}else{
+		resultado = N1 / N2;
+		 printf("o resultado da divisão é: ");
+	    scanf("%d", &resultado);
+	    
+		}
+	
+	printf( "o resultado da operacao é %d", resultado);
+		
+	}else{
+	printf("operacao invalida.\n Encerre o programa e tente novamente.");
+		
+	}
+	
+	
+	return 0;
+}
