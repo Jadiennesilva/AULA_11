@@ -1,0 +1,57 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+ 
+int main() {
+	
+	setlocale(LC_ALL, "Portuguese_Brazil");
+ 
+    int N1, N2, contador, operacao =1;
+    float resultado;
+    
+    
+    do {
+    	system("cls");
+   printf("escolha uma operação: \n");
+   printf("1 soma\n");
+   printf("2 subtração\n");
+   printf("3 multiplicação\n");
+   printf("4 divisão\n");
+   printf("operação concluida\n");
+   scanf("%d",operacao);
+   system("cls");
+   
+   printf("primeiro valor: \n");
+   scanf("%d", N1);
+   
+   printf("primeiro valor: \n");
+   scanf("%d", N1);
+   
+   
+   if(operacao == 1){
+    resultado = N1 + N2;
+   	
+   }else if(operacao ==2 ){
+	resultado = N1 - N2;
+   	
+   }else if(operacao ==3 ){
+	resultado = N1 * N2;
+   	
+   }else if(operacao ==4 ){
+	resultado = (float) N1/N2;
+   	
+   }else if(operacao !=0 ){
+  printf("operacao invalida. tente novamente \n");
+  
+   }
+   printf("%.2f",resultado);
+   printf("deseja continuar? 1 - sim o - nao: \n\n");
+   scanf("%d",&operacao);
+   
+ 	
+}while(contador !=0);
+   
+	system("pause");
+	
+    return 0;
+}
