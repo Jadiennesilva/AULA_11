@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main(){
+	
+	setlocale(LC_ALL, "portuguese_Brazil");
+	
+	int n1, n2, n3, n4, soma;
+	
+	printf("digite o primeiro numero da n1: \n");
+	scanf("%d",n1);
+	
+
+	printf("digite o segundo numero da n2: \n");
+	scanf("%d",n2);
+	
+	printf("digite o terceiro numero da n3: \n");
+	scanf("%d",n3);
+
+	printf("digite o quarto numero da n4: \n");
+	scanf("%d",n4);
+	
+	soma = n1 + n2 + n3 + n4;
+	
+	printf("qual é a soma:%d. \n ", soma);
+	
+	
+	
+	
+	system("pause");
+	return 0;
+}
